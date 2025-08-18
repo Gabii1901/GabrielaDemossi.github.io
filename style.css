@@ -1,3 +1,10 @@
+/* =============================
+   style.css – Currículo Web
+   Autor: Gabriela Demossi
+   Descrição: Estilos base + responsividade
+   ============================= */
+
+/* Reset simples e tokens de design */
 :root{
   --bg: #0f172a;            /* slate-900 */
   --card: #111827;          /* gray-900 */
@@ -39,9 +46,13 @@ html, body{
   padding: .5rem 0;
 }
 
+/* FOTO DO TOPO (avatar) — mantém proporção e evita distorção */
 .avatar{
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   border: 2px solid var(--brand);
+  object-fit: cover;        /* corta sem esticar */
 }
 
 /* Navegação com Flexbox */
@@ -82,6 +93,15 @@ html, body{
   border: 1px dashed var(--outline);
   border-radius: .75rem;
   background: #0c1329;
+}
+
+/* FOTO DA SEÇÃO – responsiva, sem esticar */
+.moldura img{
+  display: block;
+  max-width: 400px;   /* limite opcional */
+  width: 100%;
+  height: auto;       /* mantém proporção */
+  border-radius: .5rem;
 }
 
 .lista-colunas{
