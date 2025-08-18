@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-wrap" role="banner">
-        <img src="media/foto.jpg" alt="Foto de perfil de Gabriela Demossi" class="avatar" width="96" height="96" />
+    <header class="site-header" role="banner">
+      <div class="container header-wrap">
+        <!-- Foto do topo (avatar) -->
+        <img src="media/foto.jpg" alt="Foto de perfil de Gabriela Demossi" class="avatar" />
         <div>
           <h1 id="saudacao">Olá! Eu sou a Gabriela 👋</h1>
-          <p>Desenvolvedora web focada em <strong>Python</strong>, <strong>JavaScript</strong> e <strong>PostgreSQL</strong>. Busco oportunidades remotas.</p>
+          <p>
+            Desenvolvedora web focada em <strong>Python</strong>, <strong>JavaScript</strong> e
+            <strong>PostgreSQL</strong>. Busco oportunidades remotas.
+          </p>
         </div>
       </div>
 
@@ -33,10 +37,14 @@
       <section id="sobre" class="card" aria-labelledby="sobre-titulo">
         <h2 id="sobre-titulo">Apresentação</h2>
         <article>
-          <p>Trabalho com <em>Flask</em> no backend e <em>Vue.js</em> no frontend. Gosto de escrever código limpo, acessível e bem documentado.</p>
+          <p>
+            Trabalho com <em>Flask</em> no backend e <em>Vue.js</em> no frontend. Gosto de escrever
+            código limpo, acessível e bem documentado.
+          </p>
 
           <figure class="moldura">
-            <img src="media/foto.jpg" alt="Retrato profissional de Gabriela" width="400" height="400" />
+            <!-- Imagem responsiva sem width/height fixos -->
+            <img src="media/foto.jpg" alt="Retrato profissional de Gabriela" />
             <figcaption>Foto de perfil utilizada em projetos e redes profissionais.</figcaption>
           </figure>
         </article>
@@ -56,7 +64,12 @@
 
         <!-- Canvas opcional -->
         <div class="canvas-wrap">
-          <canvas id="grafico" width="420" height="220" aria-label="Gráfico simples de barras com minhas habilidades"></canvas>
+          <canvas
+            id="grafico"
+            width="420"
+            height="220"
+            aria-label="Gráfico simples de barras com minhas habilidades"
+          ></canvas>
           <p class="canvas-legenda">Gráfico ilustrativo das habilidades (pontuação fictícia)</p>
         </div>
       </section>
@@ -72,7 +85,9 @@
 
         <div class="actions">
           <button id="btn-boasvindas" class="btn">Mostrar Boas-vindas</button>
-          <button id="btn-toggle" class="btn btn-secundario" aria-controls="lista-extra" aria-expanded="false">Mostrar/esconder detalhes</button>
+          <button id="btn-toggle" class="btn btn-secundario" aria-controls="lista-extra" aria-expanded="false">
+            Mostrar/esconder detalhes
+          </button>
           <button id="btn-tema" class="btn btn-outline">Trocar cor do tema</button>
         </div>
 
